@@ -1,0 +1,70 @@
+5g-telco-homelab/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+├── clusters/
+│   ├── kubeadm-config.yaml
+│   ├── sysctl.conf
+│   └── hugepages.sh
+│
+├── helm/
+│   ├── free5gc/
+│   │   ├── values.yaml
+│   │   └── Chart.yaml
+│   │
+│   ├── ueransim/
+│   │   ├── values.yaml
+│   │   └── Chart.yaml
+│   │
+│   └── elastic/
+│       ├── elasticsearch-values.yaml
+│       ├── kibana-values.yaml
+│       └── fluentbit-values.yaml
+│
+├── k8s/
+│   ├── namespaces.yaml
+│   │
+│   ├── sriov/
+│   │   ├── sriov-network.yaml
+│   │   └── sriov-policy.yaml
+│   │
+│   ├── multus/
+│   │   └── network-attachment-definitions.yaml
+│   │
+│   └── upf-node-selector.yaml
+│
+├── anuket/
+│   ├── rc-job.yaml
+│   └── run-rc.sh
+│
+├── observability/
+│   ├── dashboards/
+│   │   ├── ue-registration.ndjson
+│   │   ├── pdu-session.ndjson
+│   │   └── upf-traffic.ndjson
+│   │
+│   └── index-template.json
+│
+├── scripts/
+│   ├── bootstrap-cluster.sh
+│   ├── install-sriov.sh
+│   ├── deploy-core.sh
+│   ├── deploy-ran.sh
+│   ├── deploy-observability.sh
+│   ├── test-attach.sh
+│   ├── test-n6-iperf.sh
+│   ├── run-anuket.sh
+│   └── cleanup.sh
+│
+├── registry/
+│   └── local-registry.yaml
+│
+├── docs/
+│   ├── architecture-diagram.md
+│   ├── numa-cpu-mapping.md
+│   └── network-design.md
+│
+├── Makefile
+└── README.md

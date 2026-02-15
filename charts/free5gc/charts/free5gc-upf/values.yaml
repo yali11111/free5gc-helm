@@ -62,7 +62,7 @@ upf:
   replicaCount: 1
   image:
     name: free5gc/upf
-    tag: v4.1.0
+    tag: v4.2.0
     pullPolicy: Always
   configmap:
     wrapperAdditionalCommands: ""
@@ -127,12 +127,12 @@ upf:
       reportCaller: false # enable the caller report or not, value: true or false
 
 # The followed values will be considered in the case of choosing "ulcl" architecture for the user plane
-upf1:
-  name: upf1
+psaupf1:
+  name: psaupf1
   replicaCount: 1
   image:
     name: free5gc/upf
-    tag: v4.1.0
+    tag: v4.2.0
     pullPolicy: Always
   configmap:
     wrapperAdditionalCommands: ""
@@ -196,12 +196,12 @@ upf1:
       level: info # how detailed to output, value: trace, debug, info, warn, error, fatal, panic
       reportCaller: false # enable the caller report or not, value: true or false
 
-upf2:
-  name: upf2
+psaupf2:
+  name: psaupf2
   replicaCount: 1
   image:
     name: free5gc/upf
-    tag: v4.1.0
+    tag: v4.2.0
     pullPolicy: Always
   configmap:
     wrapperAdditionalCommands: ""
@@ -265,12 +265,12 @@ upf2:
       level: info # how detailed to output, value: trace, debug, info, warn, error, fatal, panic
       reportCaller: false # enable the caller report or not, value: true or false
 
-upfb:
-  name: upfb
+iupf1:
+  name: iupf1
   replicaCount: 1
   image:
     name: free5gc/upf
-    tag: v4.1.0
+    tag: v4.2.0
     pullPolicy: Always
   configmap:
     wrapperAdditionalCommands: ""
